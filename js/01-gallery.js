@@ -32,13 +32,13 @@ function imageClick(event) {
 
 const instance = basicLightbox.create(`<img src="${event.target.dataset.source}" width="800" height="600" >` ) ;
 instance.show()
-}
+
 
 gallery.addEventListener('keydown', (event)=>{ 
   if(event.code === 'Escape'){
     instance.close()
   }
-})
+})  }
 
 function blockStandartAction(event){
   event.preventDefault();
